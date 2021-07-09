@@ -1,0 +1,16 @@
+
+.cuadro{
+    border: 5px teal solid;
+    background: grey;
+    position: static;
+    height: 250px;
+    width: 250px;
+    margin: auto;
+}
+.entradas{
+    height: 40px;
+    width: 40px;
+    padding-block: 20px;
+    box-sizing: border-box;
+    
+}

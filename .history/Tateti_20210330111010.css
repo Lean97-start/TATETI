@@ -1,0 +1,10 @@
+.cuadro{
+    border: 10px teal solid;
+    background: grey;
+    position: absolute;
+    margin: 250px;
+}
+.entradas{
+    height: 20px;
+    width: 40px;
+}

@@ -1,0 +1,15 @@
+
+.cuadro{
+    border: 5px teal solid;
+    background: grey;
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin: ;
+}
+.entradas{
+    height: 70px;
+    width: 70px;
+    box-sizing: border-box;
+    
+}

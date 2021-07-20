@@ -14,7 +14,30 @@ let turno = false;
     v8 = document.getElementById("_23");
     v9 = document.getElementById("_33");
 
-    
+    function iniciliazar(){
+        v1.style.backgroundColor= "white";
+        v2.style.backgroundColor= "white";
+        v3.style.backgroundColor= "white";
+        v4.style.backgroundColor= "white";
+        v5.style.backgroundColor= "white";
+        v6.style.backgroundColor= "white";
+        v7.style.backgroundColor= "white";
+        v8.style.backgroundColor= "white";
+        v9.style.backgroundColor= "white";
+
+        turno = false;
+        c1, c2, c3, c4, c5, c6, c7, c8, c9  = undefined;
+
+        document.getElementById("_11").disabled = false;
+        document.getElementById("_21").disabled = false;
+        document.getElementById("_31").disabled = false;
+        document.getElementById("_12").disabled = false;
+        document.getElementById("_22").disabled = false;
+        document.getElementById("_32").disabled = false;
+        document.getElementById("_13").disabled = false;
+        document.getElementById("_23").disabled = false;
+        document.getElementById("_33").disabled = false;
+    }
 
     v1.addEventListener('click', function(){
         turnoJugar(v1);
@@ -128,7 +151,7 @@ function resultado(){
             alert(`¡Tenemos Ganador, Ganó el color ${colorGanador}!`);
             iniciliazar();
             
-    } else if(c1 && c2 && c3 && c4 && c5 && c6 && c7 && c8 && c9 !== null){
+    } else if(c1 && c2 && c3 && c4 && c5 && c6 && c7 && c8 && c9 != null){
             alert("No hubo ganadores");
             iniciliazar();
             
@@ -139,28 +162,5 @@ let boton = document.getElementById('btn-jugar');
     boton.addEventListener('click', function(){ iniciliazar();})
     
    
-    function iniciliazar(){
-        v1.style.backgroundColor= "white";
-        v2.style.backgroundColor= "white";
-        v3.style.backgroundColor= "white";
-        v4.style.backgroundColor= "white";
-        v5.style.backgroundColor= "white";
-        v6.style.backgroundColor= "white";
-        v7.style.backgroundColor= "white";
-        v8.style.backgroundColor= "white";
-        v9.style.backgroundColor= "white";
 
-        turno = false;
-        c1, c2, c3, c4, c5, c6, c7, c8, c9  = null;
-
-        document.getElementById("_11").disabled = false;
-        document.getElementById("_21").disabled = false;
-        document.getElementById("_31").disabled = false;
-        document.getElementById("_12").disabled = false;
-        document.getElementById("_22").disabled = false;
-        document.getElementById("_32").disabled = false;
-        document.getElementById("_13").disabled = false;
-        document.getElementById("_23").disabled = false;
-        document.getElementById("_33").disabled = false;
-    }
 

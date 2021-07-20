@@ -14,7 +14,28 @@ let turno = false;
     v8 = document.getElementById("_23");
     v9 = document.getElementById("_33");
 
-    
+    function iniciliazar(){
+        v1.style.backgroundColor= "white";
+        v2.style.backgroundColor= "white";
+        v3.style.backgroundColor= "white";
+        v4.style.backgroundColor= "white";
+        v5.style.backgroundColor= "white";
+        v6.style.backgroundColor= "white";
+        v7.style.backgroundColor= "white";
+        v8.style.backgroundColor= "white";
+        v9.style.backgroundColor= "white";
+        c1, c2, c3, c4, c5, c6, c7, c8, c9  = null;
+
+        document.getElementById("_11").disabled = false;
+        document.getElementById("_21").disabled = false;
+        document.getElementById("_31").disabled = false;
+        document.getElementById("_12").disabled = false;
+        document.getElementById("_22").disabled = false;
+        document.getElementById("_32").disabled = false;
+        document.getElementById("_13").disabled = false;
+        document.getElementById("_23").disabled = false;
+        document.getElementById("_33").disabled = false;
+    }
 
     v1.addEventListener('click', function(){
         turnoJugar(v1);
@@ -44,30 +65,35 @@ let turno = false;
         turnoJugar(v5);
         document.getElementById("_22").disabled = true;
         c5 = asignacionTurnoCaja(c5);
+        console.log("seleccion 5");
         resultado();
     });
     v6.addEventListener('click', function(){
         turnoJugar(v6);
         document.getElementById("_32").disabled = true;
         c6 = asignacionTurnoCaja(c6);
+        console.log("seleccion 6");
         resultado();
     });
     v7.addEventListener('click', function(){
         turnoJugar(v7);
         document.getElementById("_13").disabled = true;
         c7 = asignacionTurnoCaja(c7);
+        console.log("seleccion 7");
         resultado();
     });
     v8.addEventListener('click', function(){
         turnoJugar(v8);
         document.getElementById("_23").disabled = true;
         c8 = asignacionTurnoCaja(c8);
+        console.log("seleccion 8");
         resultado();
     });
     v9.addEventListener('click', function(){
         turnoJugar(v9);
         document.getElementById("_33").disabled = true;
         c9 = asignacionTurnoCaja(c9);
+        console.log("seleccion 9");
         resultado();
     });
    
@@ -87,6 +113,7 @@ let turno = false;
     function turnoJugar(t){
         if(turno == false){
             turno = true;
+            console.log(turno);
             colorTurno(t);
         } else if(turno == true){
             turno = false;
@@ -94,14 +121,11 @@ let turno = false;
         }
     }
 
-    let colorGanador = null;
     function colorTurno(t){
         if(turno == true){  
             t.style.backgroundColor= "red";
-            colorGanador = "Rojo";
         }else if(turno == false){
             t.style.backgroundColor= "green";
-            colorGanador = "Verde";
         }
     }
 
@@ -114,7 +138,7 @@ function resultado(){
             (c7==1 && c5==1 && c3==1) ||
              (c1==1 && c4==1 && c7==1) ||
               (c3==1 && c6==1  && c9==1)){
-            alert(`¡Tenemos Ganador, Ganó el color ${colorGanador}!`);
+            alert("¡Tenemos Ganador!");
             iniciliazar();
 
     } else if((c1==0 && c2==0 && c3==0) ||
@@ -125,42 +149,21 @@ function resultado(){
              (c7==0 && c5==0 && c3==0) ||
               (c1==0 && c4==0 && c7==0) ||
                (c3==0 && c6==0  && c9==0)){
-            alert(`¡Tenemos Ganador, Ganó el color ${colorGanador}!`);
+            alert("¡Tenemos Ganador!");
             iniciliazar();
             
-    } else if(c1 && c2 && c3 && c4 && c5 && c6 && c7 && c8 && c9 !== null){
+    } else if(c1 && c2 && c3 && c4 && c5 && c6 && c7 && c8 && c9 != null){
             alert("No hubo ganadores");
             iniciliazar();
             
     }
 }
 
+
+
 let boton = document.getElementById('btn-jugar');
     boton.addEventListener('click', function(){ iniciliazar();})
     
    
-    function iniciliazar(){
-        v1.style.backgroundColor= "white";
-        v2.style.backgroundColor= "white";
-        v3.style.backgroundColor= "white";
-        v4.style.backgroundColor= "white";
-        v5.style.backgroundColor= "white";
-        v6.style.backgroundColor= "white";
-        v7.style.backgroundColor= "white";
-        v8.style.backgroundColor= "white";
-        v9.style.backgroundColor= "white";
 
-        turno = false;
-        c1, c2, c3, c4, c5, c6, c7, c8, c9  = null;
-
-        document.getElementById("_11").disabled = false;
-        document.getElementById("_21").disabled = false;
-        document.getElementById("_31").disabled = false;
-        document.getElementById("_12").disabled = false;
-        document.getElementById("_22").disabled = false;
-        document.getElementById("_32").disabled = false;
-        document.getElementById("_13").disabled = false;
-        document.getElementById("_23").disabled = false;
-        document.getElementById("_33").disabled = false;
-    }
 

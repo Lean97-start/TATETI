@@ -151,7 +151,7 @@ let boton = document.getElementById('btn-jugar');
         v9.style.backgroundColor= "white";
 
         turno = false;
-        c1, c2, c3, c4, c5, c6, c7, c8, c9  = null;
+        c1, c2, c3, c4, c5, c6, c7, c8, c9  = undefined;
 
         document.getElementById("_11").disabled = false;
         document.getElementById("_21").disabled = false;

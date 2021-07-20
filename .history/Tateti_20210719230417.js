@@ -13,18 +13,18 @@ let c1,c2,c3,c4,c5,c6,c7,c8,c9 = null;
     v8 = document.getElementById("_32");
     v9 = document.getElementById("_33");
 
-    function iniciliazar (){
-        v1.style.backgroundColor= "white";
-        v2.style.backgroundColor= "white";
-        v3.style.backgroundColor= "white";
-        v4.style.backgroundColor= "white";
-        v5.style.backgroundColor= "white";
-        v6.style.backgroundColor= "white";
-        v7.style.backgroundColor= "white";
-        v8.style.backgroundColor= "white";
-        v9.style.backgroundColor= "white";
-        c1, c2, c3, c4, c5, c6, c7, c8, c9  = 0;
-    }
+function iniciliazar (){
+    v1.style.backgroundColor= "white";
+    v2.style.backgroundColor= "white";
+    v3.style.backgroundColor= "white";
+    v4.style.backgroundColor= "white";
+    v5.style.backgroundColor= "white";
+    v6.style.backgroundColor= "white";
+    v7.style.backgroundColor= "white";
+    v8.style.backgroundColor= "white";
+    v9.style.backgroundColor= "white";
+    
+}
 
 v1.addEventListener('click', function(){
     c1 = 1;   

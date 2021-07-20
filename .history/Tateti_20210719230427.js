@@ -23,7 +23,7 @@ let c1,c2,c3,c4,c5,c6,c7,c8,c9 = null;
         v7.style.backgroundColor= "white";
         v8.style.backgroundColor= "white";
         v9.style.backgroundColor= "white";
-        c1, c2, c3, c4, c5, c6, c7, c8, c9  = 0;
+        
     }
 
 v1.addEventListener('click', function(){

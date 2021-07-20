@@ -1,7 +1,7 @@
 "use strict"
 
 let v1, v2, v3, v4, v5, v6, v7, v8, v9;
-let c1,c2,c3,c4,c5,c6,c7,c8,c9 = undefined;
+let c1,c2,c3,c4,c5,c6,c7,c8,c9;
 let turno = false;
 
     v1 = document.getElementById("_11");
@@ -129,9 +129,9 @@ function resultado(){
             alert(`¡Tenemos Ganador, Ganó el color ${colorGanador}!`);
             iniciliazar();
             
-    } else if(c1!= undefined && c2!= undefined && c3!= undefined && c4!= undefined && c5!= undefined && c6!= undefined && c7!= undefined && c8!= undefined && c9!= undefined){
-          
-            alert("No hubo ganadores");
+    } else if((c1 && c2 && c3 && c4 && c5 && c6 && c7 && c8 && c9) !== undefined){
+            
+        alert("No hubo ganadores");
             iniciliazar();
             
     }

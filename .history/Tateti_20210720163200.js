@@ -129,7 +129,7 @@ function resultado(){
             alert(`¡Tenemos Ganador, Ganó el color ${colorGanador}!`);
             iniciliazar();
             
-    } else if(c1!= undefined && c2!= undefined && c3!= undefined && c4!= undefined && c5!= undefined && c6!= undefined && c7!= undefined && c8!= undefined && c9!= undefined){
+    } else if((c1!= undefined && c2!= undefined && c3!= undefined && c4!= undefined && c5!= undefined && c6 && c7 && c8 && c9) != undefined){
           
             alert("No hubo ganadores");
             iniciliazar();

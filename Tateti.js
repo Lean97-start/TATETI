@@ -1,5 +1,5 @@
 "use strict"
-
+//game
 let v1, v2, v3, v4, v5, v6, v7, v8, v9;
 let c1,c2,c3,c4,c5,c6,c7,c8,c9 = undefined;
 let turno = false;
